@@ -10,28 +10,32 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} bg-gray-900 text-slate-100`}>
-        <header className='w-screen lg:w-1/2 text-center flex flex-col md:flex-row'>
+        <header className='mt-8 w-screen lg:w-1/2 text-center flex flex-col md:flex-row'>
           <h1 className={`${nova_round.className} text-6xl tracking-tight`}>Travis Miller</h1>
           <h2 className={`${nova_round.className} text-xl text-blue-500 leading-6 mb-4 tracking-tighter`}>Full-Stack Web Developer</h2>
           <nav>
-            <ul className='w-1/3 mx-auto'>
+            <ul className='w-2/3 mx-auto columns-2'>
               <a href='/'>
-                <li className='ms-2 mx-auto mb-2 border-slate-100 border-l-4 hover:border-r-4 hover:me-2'>
+                <li className='w-full mb-2 border-slate-100 border-l-4
+                 hover:text-xl hover:me-2 hover:bg-gray-800'>
                   About Me
                 </li>
               </a>
               <a href='/'>
-                <li className='ms-2 mx-auto mb-2 px-4 border-slate-100 border-l-4 hover:border-r-4'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-l-4 
+                hover:text-xl'>
                   Projects
                 </li>
               </a>
               <a href='/'>
-                <li className='ms-2 mx-auto mb-2 px-4 border-slate-100 border-l-4 hover:border-r-4'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 
+                hover:text-xl'>
                   Contact
                 </li>
               </a>
               <a href='/'>
-                <li className='ms-2 mx-auto mb-2 px-4 border-slate-100 border-l-4 hover:border-r-4'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 
+                hover:text-xl'>
                   Resume
                 </li>
               </a>
