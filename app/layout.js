@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} bg-gray-900 text-slate-100`}>
-        <header className='mt-8 w-screen lg:w-1/2 text-center flex flex-col md:flex-row lg:bg-blue-300 lg'>
+        <header className='mt-8 w-screen lg:w-1/2 text-center flex flex-col lg:bg-blue-300 lg'>
           <h1 className={`${nova_round.className} text-6xl tracking-tight`}>Travis Miller</h1>
           <h2 className={`${nova_round.className} text-xl text-blue-500 leading-6 mb-4 tracking-tighter`}>Full-Stack Web Developer</h2>
           <nav>
