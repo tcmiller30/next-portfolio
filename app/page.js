@@ -5,7 +5,7 @@ export default function Home() {
   return (
     
       <>
-        <div className="mt-4 mx-auto w-3/5 p-4 bg-blue-700 rounded-t-full ">
+        <div className="mt-4 mx-auto w-2/5 pt-4 px-2 bg-blue-700 rounded-t-full">
           <Image
           src='/../public/profile.jpg'
           alt="Picture of Full-Stack Developer, Travis Miller"
@@ -13,7 +13,7 @@ export default function Home() {
           height={200}
           className="rounded-full mx-auto mb-2 shadow-xl"
           />
-          <h2 className="text-center">It&#39;s Nice to Meet You!</h2>
+          <h2 className="text-center text-xl font-bold">It&#39;s Nice to Meet You!</h2>
         </div>
         
         <div className="p-8 rounded-xl text-justify bg-blue-700">
