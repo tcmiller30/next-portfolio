@@ -9,33 +9,31 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-gray-900 text-slate-100`}>
-        <header className='mt-8 w-screen lg:w-1/2 text-center flex flex-col lg:bg-blue-300 lg'>
-          <h1 className={`${nova_round.className} text-6xl tracking-tight`}>Travis Miller</h1>
-          <h2 className={`${nova_round.className} text-xl text-blue-500 leading-6 mb-4 tracking-tighter`}>Full-Stack Web Developer</h2>
-          <nav>
-            <ul className='w-2/3 mx-auto columns-2'>
+      <body className={`${montserrat.className} h-screen bg-gray-900 text-slate-100 lg:flex `}>
+        <header className='mt-8 w-screen text-center flex flex-col lg:w-1/2 lg:flex-row lg:justify-center lg:items-center'>
+          <div className='lg:text-right lg:w-3/5'>
+            <h1 className={`${nova_round.className} text-6xl tracking-tight`}>Travis Miller</h1>
+            <h2 className={`${nova_round.className} text-xl text-blue-500 leading-6 mb-4 tracking-tighter`}>Full-Stack Web Developer</h2>     
+          </div>
+          <nav className='lg:w-1/4'>
+            <ul className='w-full mx-auto ms-4 columns-2 lg:columns-1 lg:border-l-4 lg:ps-4'>
               <a href='/'>
-                <li className='w-full mb-2 border-slate-100 border-l-4
-                 hover:text-xl hover:me-2 hover:bg-gray-800'>
+                <li className='w-full ps-4 mb-2 border-slate-100 border-l-4 lg:my-2 lg:text-lg lg:hover:ms-2 lg:hover:text-2xl lg:hover:border-blue-500'>
                   About Me
                 </li>
               </a>
-              <a href='/'>
-                <li className='w-full mx-auto mb-2 border-slate-100 border-l-4 
-                hover:text-xl'>
+              <a href='/projects'>
+                <li className='w-full mb-2 border-slate-100 border-l-4 lg:text-lg lg:hover:ms-2 lg:hover:text-2xl lg:hover:border-blue-500'>
                   Projects
                 </li>
               </a>
-              <a href='/'>
-                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 
-                hover:text-xl'>
+              <a href='/contact'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 lg:border-r-0 lg:border-l-4 lg:text-lg lg:hover:ms-2 lg:hover:text-2xl lg:hover:border-blue-500'>
                   Contact
                 </li>
               </a>
               <a href='/'>
-                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 
-                hover:text-xl'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 lg:border-r-0 lg:border-l-4 lg:text-lg lg:hover:ms-2 lg:hover:text-2xl lg:hover:border-blue-500'>
                   Resume
                 </li>
               </a>
@@ -44,7 +42,7 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
 
-        <main className='w-11/12 mx-auto'>
+        <main className='w-5/6 mx-auto lg:w-7/12 lg:px-4 lg:flex lg:flex-col lg:items-center'>
           {children}
         </main>
       </body>
