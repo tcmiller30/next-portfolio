@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} h-screen bg-gradient-to-b from-blue-950 from 70% to-slate-900 to-90% text-slate-100 lg:flex `}>
+      <body className={`${montserrat.className} h-full bg-gradient-to-b from-blue-950 from 70% to-slate-900 to-90% text-slate-100 lg:flex `}>
         <header className='mt-8 w-screen text-center flex flex-col lg:w-1/2 lg:flex-row lg:justify-center lg:items-center lg:ps-4'>
           {/* Title Text */}
           <div className='lg:text-right lg:w-full'>
