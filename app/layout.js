@@ -9,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} h-full bg-gradient-to-b from-blue-950 from 70% to-slate-900 to-90% text-slate-100 lg:flex `}>
+      <body className={`${montserrat.className} h-full bg-gradient-to-b from-slate-900 from-10% to-slate-900 to-90% via-blue-950 text-slate-100`}>
+        {/* extend gradient to length of screen */}
+        <div className='h-full lg:flex'>
         <header className='mt-8 w-screen text-center flex flex-col lg:w-1/2 lg:flex-row lg:justify-center lg:items-center lg:ps-4'>
           {/* Title Text */}
           <div className='lg:text-right lg:w-full'>
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
             <h2 className={`${nova_round.className} text-xl text-blue-500 leading-6 mb-4 tracking-tighter lg:text-2xl`}>Full-Stack Web Developer</h2>     
           </div>
           {/* Navbar */}
-          <nav className='mx-auto md:w-1/2 lg:w-3/10'>
+          <nav className='mx-auto md:w-3/4 lg:w-3/10'>
             <ul className='w-full mx-auto columns-2 lg:ms-4 lg:columns-1 lg:border-l-4 lg:ps-4 lg:relative'>
               <a href='/'>
                 <li className=' w-full ps-4 mb-2 border-slate-100 border-l-4 hover:border-yellow-500 hover:text-blue-500 focus:border-blue-400 hover:transition-all duration-200 ease-in-out lg:my-2 lg:text-xl   lg:hover:text-3xl lg:leading-9 '>
@@ -47,6 +49,7 @@ export default function RootLayout({ children }) {
         <main className='w-5/6 pb-8 m-auto lg:w-7/12 lg:px-4 lg:flex lg:flex-col lg:items-center'>
           {children}
         </main>
+        </div>
       </body>
     </html>
   )
