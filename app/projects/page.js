@@ -1,29 +1,38 @@
-import Image from 'next/image'
-import codingQuiz from '/public/coding-quiz.png';
-import noteTaker from '/public/note-taker.png';
-import weatherDashboard from '/public/weather-dashboard.png';
-import workDayScheduler from '/public/work-day-scheduler.png';
-import passwordGenerator from '/public/password-generator.png';
-import techBlog from '/public/tech-blog.png';
+import { FaCode, FaCloudSun, FaCheckCircle, FaLock, FaCalendarDay, FaMicroblog} from 'react-icons/fa'
 
 export default function Projects() {
     return(
         <>
-            <div className='columns-1 md:columns-2'>
-                {/* Coding Quiz */}
-                <div className='w-full my-4 mx-auto bg-slate-400 rounded-lg'>
-                    <a href='/'>
-                        <Image src={codingQuiz} alt='Coding Quiz Start Screen' className='rounded-t-lg' />
-                    <h3>Coding Quiz Challenge</h3>
-                    </a>
-                    <p className='p-2 text-center'>This application was built when I was getting familiar with DOM Manipulation.</p>
-                    <div className='flex justify-around'>
-                        <a href='/'>GitHub</a>
-                        <a href='/'>Deployed </a>
+        <div className='flex flex-row flex-wrap'>
+
+           <article className='bg-white p-1 mx-2 my-2 w-full shadow-lg rounded-xl md:w-1/2 lg:w-1/3'>
+                <div className='bg-blue-950 rounded-lg p-4'>
+                    <div className='flex items-center'>
+                    <FaCode size='3em' className='p-2 fill-white-500 bg-gradient-radial from-blue-600 rounded-full'/>
+                    <h3 className='ms-4 text-xl tracking-tighter'>Coding Quiz Challenge</h3>
                     </div>
                 </div>
+           </article>
 
-            </div>
+           <article className='bg-white p-1 mx-2 my-2 w-full shadow-lg rounded-xl md:w-1/2 lg:w-1/3'>
+                <div className='bg-blue-950 rounded-lg p-4'>
+                    <div className='flex items-center'>
+                    <FaCode size='3em' className='p-2 fill-white-500 bg-gradient-radial from-blue-600 rounded-full'/>
+                    <h3 className='ms-4 text-xl tracking-tighter'>Coding Quiz Challenge</h3>
+                    </div>
+                </div>
+           </article>
+
+           <article className='bg-white p-1 mx-2 my-2 w-full shadow-lg rounded-xl md:w-1/2 lg:w-1/3'>
+                <div className='bg-blue-950 rounded-lg p-4'>
+                    <div className='flex items-center'>
+                    <FaCode size='3em' className='p-2 fill-white-500 bg-gradient-radial from-blue-600 rounded-full'/>
+                    <h3 className='ms-4 text-xl tracking-tighter'>Coding Quiz Challenge</h3>
+                    </div>
+                </div>
+           </article>
+           
+        </div>
         </>
     )
 }
