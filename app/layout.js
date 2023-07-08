@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
     {/* Main content */}
-        <main className='w-5/6 pb-4 m-auto  lg:px-2 lg:flex lg:flex-col lg:items-center'>
+        <main className='w-5/6 pb-4 m-auto lg:px-2 lg:flex lg:flex-col lg:items-center'>
           {children}
         </main>
         </div>
