@@ -1,5 +1,6 @@
 import './globals.css'
 import { montserrat, nova_round } from './fonts'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
  
 export const metadata = {
   title: 'Travis Miller Portfolio',
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
                 </li>
               </a>
               <a href='/contact'>
-                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 hover:border-yellow-500 hover:text-blue-300 hover:transition-all duration-200 ease-in-out lg:border-r-0 lg:border-l-4 lg:text-xl lg:hover:text-3xl lg:leading-9'>
+                <li className='w-full mx-auto mb-2 border-slate-100 border-r-4 hover:border-yellow-500 hover:text-blue-300 hover:transition-all duration-200 ease-in-out lg:border-r-0 lg:border-l-4 lg:text-xl lg:hover:text-3xl lg:active:text-3xl lg:leading-9'>
                   Contact
                 </li>
               </a>
@@ -50,6 +51,27 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         </div>
+        <footer>
+        <div className='fixed bottom-0 inset-x-0 w-1/4 mt-2 mx-auto columns-3 gap-4'>
+                <div className='flex flex-col p-4'>
+                    <div className='mx-auto p-4 bg-gradient-radial from-blue-600 aspect-square rounded-full'>
+                    <FaEnvelope size='1.5em' className=' fill-white-500'/>
+                    </div>
+                </div>
+
+                <div className='flex flex-col p-4'>
+                    <div className='mx-auto p-4 bg-gradient-radial from-blue-600 aspect-square rounded-full'>
+                    <FaGithub size='1.5em' className=' fill-white-500'/>
+                    </div>
+                </div>
+
+                <div className='flex flex-col p-4'>
+                    <div className='mx-auto p-4 bg-gradient-radial from-blue-600 aspect-square rounded-full'>
+                    <FaLinkedin size='1.5em' className=' fill-white-500'/>
+                    </div>
+                </div>
+            </div>
+        </footer>
       </body>
     </html>
   )
