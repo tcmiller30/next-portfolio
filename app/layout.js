@@ -47,11 +47,11 @@ export default function RootLayout({ children }) {
                     Contact
                   </li>
                 </Link>
-                <Link href="/">
+                <a href="/travisMillerResume.pdf" download>
                   <li className="mx-auto mb-2 w-full border-r-4 border-slate-100 duration-200 ease-in-out hover:border-yellow-500 hover:text-blue-500 hover:transition-all lg:border-l-4 lg:border-r-0 lg:text-xl lg:leading-9 lg:hover:text-3xl">
                     Resume
                   </li>
-                </Link>
+                </a>
               </ul>
             </nav>
           </header>
