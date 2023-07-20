@@ -5,20 +5,20 @@ export default function Home() {
   return (
     
       <>
-        <div className="mt-4 mx-auto w-1/3 pt-1 px-1 bg-blue-700 rounded-t-full md:mt-2 md:w-1/4 lg:w-1/4">
+        <div className="mt-4 mx-auto w-1/3 pt-1 px-1 bg-white rounded-t-full md:mt-2 md:w-1/4 lg:w-1/4">
           <div className="rounded-t-full bg-blue-950">
             <Image
             src={profilePic}
             alt="Picture of Full-Stack Developer, Travis Miller"
             width={250}
             height={250}
-            className="rounded-full mx-auto shadow-xl"
+            className="rounded-full mx-auto p-2 shadow-xl"
             />
             <h2 className="text-center text-sm p-2 font-bold bg-blue-950 lg:text-lg">It&#39;s Nice to Meet You!</h2>
           </div>
         </div>
         
-        <div className="p-1 mx-auto rounded-xl text-sm text-justify shadow-xl bg-blue-700  md:text-lg md:w-full lg:w-10/12 ">
+        <div className="p-1 mx-auto rounded-xl text-sm text-justify shadow-xl bg-white  md:text-lg md:w-full lg:w-10/12 ">
           <div className='bg-blue-950 p-4 rounded-xl'>
             <p className="mb-4 px-4 border-yellow-500 border-l-2 leading-relaxed bg-blue-"> My name is Travis Miller and I am a full-stack web developer currently based out of Orange County, CA. I used to work with coffee, but now I work with code.</p>
             <p className="mb-4 border-yellow-500 border-r-2 px-4 leading-relaxed"> My journey as a developer began in the sixth grade when I had saved up enough money to build my own computer. Although I wasn&#39;t exposed to coding until my high school offered an IT elective class, building the machine 

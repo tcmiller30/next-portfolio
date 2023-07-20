@@ -17,14 +17,14 @@ export default function Projects() {
 
   return (
     <>
-      <div className="flex flex-wrap">
+      <div className="mx-auto flex flex-wrap gap-4">
         <article
           id="codingQuiz"
           onClick={() => {
             setProjectModal(true);
             setActiveProject("codingQuiz");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <div href="/" className="rounded-lg bg-blue-950 p-4">
             <div className="flex items-center">
@@ -45,7 +45,7 @@ export default function Projects() {
             setProjectModal(true);
             setActiveProject("weatherDashboard");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <div className="rounded-lg bg-blue-950 p-4">
             <div className="flex items-center">
@@ -66,7 +66,7 @@ export default function Projects() {
             setProjectModal(true);
             setActiveProject("passwordGenerator");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <div className="rounded-lg bg-blue-950 p-4">
             <div className="flex items-center">
@@ -87,7 +87,7 @@ export default function Projects() {
             setProjectModal(true);
             setActiveProject("noteTaker");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <div className="rounded-lg bg-blue-950 p-4">
             <div className="flex items-center">
@@ -108,7 +108,7 @@ export default function Projects() {
             setProjectModal(true);
             setActiveProject("techBlog");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <a href="#">
             <div className="rounded-lg bg-blue-950 p-4">
@@ -131,13 +131,13 @@ export default function Projects() {
             setProjectModal(true);
             setActiveProject("workdayScheduler");
           }}
-          className="mx-2 my-2 w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg hover:bg-yellow-500 md:w-1/2 lg:w-1/3"
+          className="hover:transition-color mx-4 my-auto w-full cursor-pointer rounded-xl bg-white p-1 shadow-lg duration-200 ease-in-out hover:bg-yellow-500 md:mx-auto md:w-2/3 lg:w-2/5"
         >
           <div className="rounded-lg bg-blue-950 p-4">
             <div className="flex items-center">
               <FaCalendarDay
                 size="3em"
-                className="fill-white-500 rounded-full bg-gradient-radial from-blue-600 p-3"
+                className="fill-white-500 rounded-full bg-gradient-radial from-blue-600 p-2"
               />
               <h3 className="ms-4 text-xl tracking-tighter md:text-xl">
                 Workday Scheduler
