@@ -7,7 +7,6 @@ import weatherDashboardImg from "../../public/weatherDashboard.png";
 import workDaySchedulerImg from "../../public/workDayScheduler.png";
 import Image from "next/image";
 import { nova_round } from "../fonts";
-import { FaWindowClose } from "react-icons/fa";
 
 export default function ProjectModal(props) {
   const projects = [
@@ -111,10 +110,10 @@ export default function ProjectModal(props) {
       onClick={handleOnClose}
       className="fixed inset-0 flex items-center justify-center bg-black/75 backdrop-blur-sm"
     >
-      <div className="rounded-lg mx-auto h-5/6 bg-white p-1 md:h-2/3 md:w-3/4 lg:w-1/3 overflow-y-scroll ">
-        <div className="rounded-md flex flex-col lg:flex-none lg:grid lg:grid-rows-2 h-screen bg-blue-700 p-3 overflow-y-scroll ">
+      
+        <div className="rounded-md flex flex-col lg:flex-none bg-blue-700 border-white border-4 p-3 overflow-y-scroll md:w-3/4 lg:w-1/3 max-h-4/5">
           <div>
-            <Image src={activeProject.img_src} alt={activeProject.alt_text} className="border-2 border-blue-950 rounded object-fill w-full mx-auto" />
+            <Image src={activeProject.img_src} alt={activeProject.alt_text} className="border-2 border-blue-950 rounded object-fill w-5/6 mx-auto" />
           </div>
           <div className="bg-white m-2 p-4 rounded-md">
           <h4
@@ -128,7 +127,7 @@ export default function ProjectModal(props) {
 
 
       {/* Buttons */}
-          <div className="mx-16 gap-8 flex flex-col lg:grid lg:grid-cols-3 text-center">
+          <div className="mx-16 gap-2 flex flex-col lg:grid lg:grid-cols-3 text-center">
             <Link
               className="rounded-lg bg-blue-900 p-2 shadow-md "
               href={activeProject.deployed_url}
@@ -150,7 +149,7 @@ export default function ProjectModal(props) {
           </div>
           </div>
         </div>
-      </div>
+      
     </div>
   ) : (
     ""
